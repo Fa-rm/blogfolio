@@ -2,16 +2,16 @@
 
 /** @type {import("pliny/config").PlinyConfig } */
 const siteMetadata = {
-  title: 'Neoteric',
+  title: 'Fred',
   author: 'Frederico Matias',
-  headerTitle: 'Neoteric',
+  headerTitle: '',
   description: 'Exploring the intersections of my experience',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',
   siteRepo: 'https://github.com/timlrx/tailwind-nextjs-starter-blog',
   siteLogo: '/static/images/logo.png',
-  image: '/static/images/avatar.png',
+  image: '/static/images/fred.jpg',
   socialBanner: '/static/images/twitter-card.png',
   email: 'fredrmatias@gmail.com',
   github: 'https://github.com',

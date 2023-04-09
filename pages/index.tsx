@@ -69,10 +69,10 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
                       <div className="text-base font-medium leading-6">
                         <Link
                           href={`/blog/${slug}`}
-                          className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                          className="rounded-full bg-teal-500 px-4 py-2 font-bold text-white transition-all duration-300 hover:bg-teal-600 dark:hover:bg-teal-400"
                           aria-label={`Read "${title}"`}
                         >
-                          Read more &rarr;
+                          Read &rarr;
                         </Link>
                       </div>
                     </div>
@@ -87,7 +87,7 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
         <div className="flex justify-end text-base font-medium leading-6">
           <Link
             href="/blog"
-            className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+            className="rounded-full bg-white px-4 py-2 font-bold text-primary-500 transition-all duration-300 hover:bg-gray-100 dark:hover:bg-gray-700"
             aria-label="All posts"
           >
             All Posts &rarr;

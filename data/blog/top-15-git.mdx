@@ -1,0 +1,102 @@
+---
+title: 'Most Used Git Terminal Commands'
+date: '2018-08-15'
+tags: ['terminal', 'git', 'commands']
+---
+
+#15 Most Used Git Terminal Commands
+If you're working with Git, you probably spend a lot of time in the terminal. Here are 15 Git commands that you'll likely use on a regular basis.
+
+```git init```
+The git init command initializes a new Git repository. It creates a new .git directory in the root of your project that will store all of the Git metadata for your project.
+
+```git clone```
+The git clone command creates a copy of an existing Git repository. It downloads the entire repository, including all of its files and commit history.
+
+```git add .```
+The git add command adds changes to the staging area. This prepares the changes to be committed to the repository.
+
+
+
+```git status```
+The git status command shows the status of your repository. It shows which files have been changed, which files are staged, and which files are not being tracked by Git.
+
+
+
+```git commit```
+The git commit command creates a new commit with the changes in the staging area. When you run this command, Git will prompt you to enter a commit message.
+
+ruby
+Copy code
+$ git commit -m "Add file.txt"
+6. git push
+The git push command uploads your local changes to the remote repository.
+
+css
+Copy code
+$ git push origin main
+7. git pull
+The git pull command downloads changes from the remote repository and merges them into your local repository.
+
+css
+Copy code
+$ git pull origin main
+8. git branch
+The git branch command shows the branches in your repository.
+
+ruby
+Copy code
+$ git branch
+To create a new branch, you can use git branch <branchname>.
+
+9. git checkout
+The git checkout command switches to a different branch.
+
+ruby
+Copy code
+$ git checkout feature-branch
+To create and switch to a new branch, you can use git checkout -b <branchname>.
+
+10. git merge
+The git merge command merges changes from one branch into another branch.
+
+ruby
+Copy code
+$ git merge feature-branch
+11. git log
+The git log command shows the commit history of the repository.
+
+shell
+Copy code
+$ git log
+To use a simplified version of this command, you can use git hist.
+
+12. git reset
+The git reset command resets the repository to a previous commit. This is useful if you want to undo some changes.
+
+perl
+Copy code
+$ git reset HEAD~1
+13. git revert
+The git revert command creates a new commit that undoes a previous commit.
+
+ruby
+Copy code
+$ git revert HEAD
+14. git stash
+The git stash command temporarily saves changes that are not yet committed.
+
+ruby
+Copy code
+$ git stash
+To retrieve your changes, you can use git stash apply.
+
+15. git remote
+The git remote command shows the remote repositories that are connected to your local repository.
+
+ruby
+Copy code
+$ git remote -v
+To add a new remote repository, you can use git remote add <name> <url>.
+
+These are just a few of the many Git commands that you can use in your terminal.
