@@ -16,6 +16,7 @@ const components = {
   twitter: Twitter,
 }
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const SocialIcon = ({ kind, href, size = 5 }) => {
   if (!href || (kind === 'mail' && !/^mailto:\w+([.-]?\w+)@\w+([.-]?\w+)(.\w{2,3})+$/.test(href)))
     return null

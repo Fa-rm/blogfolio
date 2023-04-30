@@ -10,6 +10,7 @@ import Image from '@/components/Image'
 import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
 import ScrollTopAndComment from '@/components/ScrollTopAndComment'
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import Giscus from '@giscus/react'
 
 const editUrl = (path) => `${siteMetadata.siteRepo}/blob/master/data/${path}`
