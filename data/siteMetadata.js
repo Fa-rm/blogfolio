@@ -22,7 +22,7 @@ const siteMetadata = {
   locale: 'en-US',
   analytics: {
     // If you want to use an analytics provider you have to add it to the
-    // content security policy in the `next.config.js` file.
+    // analyticsConfig={siteMetadata.analytics} content security policy in the `next.config.js` file.
     // supports plausible, simpleAnalytics, umami or googleAnalytics
     plausibleDataDomain: '', // e.g. tailwind-nextjs-starter-blog.vercel.app
     simpleAnalytics: false, // true or false
