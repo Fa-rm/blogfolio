@@ -67,13 +67,19 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
                         </div>
                       </div>
                       <div className="text-base font-medium leading-6">
-                        <Link
-                          href={`/blog/${slug}`}
-                          className="rounded-full bg-teal-500 px-4 py-2 font-bold text-white transition-all duration-300 hover:bg-teal-600 dark:hover:bg-teal-400"
-                          aria-label={`Read "${title}"`}
-                        >
-                          Read &rarr;
-                        </Link>
+                        {tags.includes('nda') ? (
+                          <span className="cursor-not-allowed rounded-full bg-gray-400 px-4 py-2 font-bold text-white opacity-50">
+                            Read &rarr;
+                          </span>
+                        ) : (
+                          <Link
+                            href={`/blog/${slug}`}
+                            className="rounded-full bg-teal-500 px-4 py-2 font-bold text-white transition-all duration-300 hover:bg-teal-600 dark:hover:bg-teal-400"
+                            aria-label={`Read "${title}"`}
+                          >
+                            Read &rarr;
+                          </Link>
+                        )}
                       </div>
                     </div>
                   </div>
