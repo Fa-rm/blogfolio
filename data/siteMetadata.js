@@ -8,17 +8,17 @@ const siteMetadata = {
   description: 'Exploring the intersections of my experience',
   language: 'en-us',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',
-  siteRepo: 'https://github.com/timlrx/tailwind-nextjs-starter-blog',
+  siteUrl: 'https://blogfolio-8xaf-m9skuqonf-fa-rm.vercel.app/',
+  siteRepo: 'https://github.com/Fa-rm/blogfolio',
   siteLogo: '/static/images/logo.png',
   image: '/static/images/fred.jpg',
-  socialBanner: '/static/images/twitter-card.png',
+  socialBanner: '/static/images/web-banner.png',
   email: 'fredrmatias@gmail.com',
-  github: 'https://github.com',
-  twitter: 'https://twitter.com/Twitter',
+  github: 'https://github.com/Fa-rm/',
+  twitter: 'https://twitter.com/fredrmatias',
   facebook: 'https://facebook.com',
   youtube: 'https://youtube.com',
-  linkedin: 'https://www.linkedin.com',
+  linkedin: 'https://www.linkedin.com/in/frederico-matias-128671200/',
   locale: 'en-US',
   analytics: {
     // If you want to use an analytics provider you have to add it to the
