@@ -37,6 +37,35 @@ export default function PostLayout({ content, authorDetails, next, prev, childre
   const basePath = path.split('/')[0]
   const [loadComments, setLoadComments] = useState(false)
 
+  if (tags.includes('nda')) {
+    return (
+      <SectionContainer>
+        <BlogSEO
+          url={`${siteMetadata.siteUrl}/${path}`}
+          authorDetails={authorDetails}
+          {...content}
+        />
+        <ScrollTopAndComment />
+        <article>
+          <div className="prose max-w-none pb-8 pt-10 dark:prose-dark">
+            <h2>Data protected by NDA</h2>
+          </div>
+          <footer>
+            <div className="pt-4 xl:pt-8">
+              <Link
+                href={`/${basePath}`}
+                className="rounded-full bg-white px-4 py-2 font-bold text-primary-500 transition-all duration-300 hover:bg-gray-100 dark:hover:bg-gray-700"
+                aria-label="Back to the blog"
+              >
+                &larr; Back
+              </Link>
+            </div>
+          </footer>
+        </article>
+      </SectionContainer>
+    )
+  }
+
   return (
     <SectionContainer>
       <BlogSEO url={`${siteMetadata.siteUrl}/${path}`} authorDetails={authorDetails} {...content} />
