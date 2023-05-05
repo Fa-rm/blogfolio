@@ -4,12 +4,21 @@ import Logo from '@/data/myLogo.svg'
 import Link from './Link'
 import MobileNav from './MobileNav'
 import ThemeSwitch from './ThemeSwitch'
+import { Howl } from 'howler'
 
 const Header = () => {
+  const logoSound = new Howl({
+    src: ['/static/click.mp3'],
+  })
+
+  const handleClickLogo = () => {
+    logoSound.play()
+  }
+
   return (
     <header className="flex items-center justify-between py-10">
       <div>
-        <Link href="/" aria-label={siteMetadata.headerTitle}>
+        <Link href="/" aria-label={siteMetadata.headerTitle} onClick={handleClickLogo}>
           <div className="flex items-center justify-between">
             <div className="mr-3">
               <Logo width={140} height={80} />

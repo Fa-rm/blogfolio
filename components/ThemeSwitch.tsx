@@ -1,18 +1,36 @@
 import { useEffect, useState } from 'react'
 import { useTheme } from 'next-themes'
+import { Howl, Howler } from 'howler'
 
 const ThemeSwitch = () => {
   const [mounted, setMounted] = useState(false)
   const { theme, setTheme, resolvedTheme } = useTheme()
 
-  // When mounted on client, now we can show the UI
-  useEffect(() => setMounted(true), [])
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  const handleThemeChange = () => {
+    if (theme === 'dark' || resolvedTheme === 'dark') {
+      setTheme('light')
+    } else {
+      setTheme('dark')
+    }
+
+    // Create a new Howl instance with the sound file
+    const sound = new Howl({
+      src: ['/static/click.mp3'],
+    })
+
+    // Play the sound
+    sound.play()
+  }
 
   return (
     <button
       aria-label="Toggle Dark Mode"
       className="ml-1 mr-1 h-8 w-8 rounded p-1 sm:ml-4"
-      onClick={() => setTheme(theme === 'dark' || resolvedTheme === 'dark' ? 'light' : 'dark')}
+      onClick={handleThemeChange}
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"

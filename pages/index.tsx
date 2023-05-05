@@ -7,9 +7,18 @@ import { sortedBlogPost, allCoreContent } from 'pliny/utils/contentlayer'
 import { InferGetStaticPropsType } from 'next'
 import { NewsletterForm } from 'pliny/ui/NewsletterForm'
 import { allBlogs } from 'contentlayer/generated'
+import { Howl } from 'howler'
 import type { Blog } from 'contentlayer/generated'
 
 const MAX_DISPLAY = 5
+
+// const positiveSound = new Howl({
+//   src: ['/static/click.mp3'],
+// })
+
+// const negativeSound = new Howl({
+//   src: ['/static/click.mp3'],
+// })
 
 export const getStaticProps = async () => {
   const sortedPosts = sortedBlogPost(allBlogs) as Blog[]
@@ -68,12 +77,16 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
                       </div>
                       <div className="text-base font-medium leading-6">
                         {tags.includes('nda') ? (
-                          <span className="cursor-not-allowed rounded-full bg-gray-400 px-4 py-2 font-bold text-white opacity-50">
+                          <span
+                            className="cursor-not-allowed rounded-full bg-gray-400 px-4 py-2 font-bold text-white opacity-50"
+                            // onClick={() => negativeSound.play()}
+                          >
                             Read &rarr;
                           </span>
                         ) : (
                           <Link
                             href={`/blog/${slug}`}
+                            // onClick={() => positiveSound.play()}
                             className="rounded-full bg-teal-500 px-4 py-2 font-bold text-white transition-all duration-300 hover:bg-teal-600 dark:hover:bg-teal-400"
                             aria-label={`Read "${title}"`}
                           >
@@ -95,6 +108,7 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
             href="/blog"
             className="rounded-full bg-white px-4 py-2 font-bold text-primary-500 transition-all duration-300 hover:bg-gray-100 dark:hover:bg-gray-700"
             aria-label="All posts"
+            // onClick={() => positiveSound.play()}
           >
             All Posts &rarr;
           </Link>
