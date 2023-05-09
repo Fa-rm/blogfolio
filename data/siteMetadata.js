@@ -12,7 +12,7 @@ const siteMetadata = {
   siteRepo: 'https://github.com/Fa-rm/blogfolio',
   siteLogo: '/static/images/logo.png',
   image: '/static/images/fred.jpg',
-  socialBanner: '/static/images/web-banner.png',
+  socialBanner: '/public/static/images/web-banner.png',
   email: 'fredrmatias@gmail.com',
   github: 'https://github.com/Fa-rm/',
   twitter: 'https://twitter.com/fredrmatias',
