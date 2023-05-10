@@ -3,7 +3,8 @@ import { InferGetStaticPropsType } from 'next'
 import { allAuthors } from 'contentlayer/generated'
 import { MDXLayoutRenderer } from 'pliny/mdx-components'
 import { MDXComponents } from '@/components/MDXComponents'
-import usesData from '@/data/usesData'
+
+import usesStack from '@/data/usesStack'
 import Link from 'next/link'
 
 const DEFAULT_LAYOUT = 'AuthorLayout'
@@ -25,7 +26,7 @@ export default function About({ author }: InferGetStaticPropsType<typeof getStat
         <div className="space-y-2 pb-8 pt-6 md:space-y-5"></div>
         <div className="container py-12">
           <div className="flex flex-row flex-wrap">
-            {usesData.map((d) => (
+            {usesStack.map((d) => (
               <Link
                 key={d.href}
                 href={d.href}
