@@ -1,6 +1,94 @@
 const projectsData = [
   {
-    title: 'A Search Engine',
+    title: 'BeInCrypto Website Rebrand',
+    description: `What if you could look up any information in the world? Webpages, images, videos
+    and more. Google has many features to help you find exactly what you're looking
+    for.`,
+    imgSrc: '/static/images/web-banner.png',
+    href: 'https://www.google.com',
+  },
+  {
+    title: 'Stream Genius Web app',
+    description: `What if you could look up any information in the world? Webpages, images, videos
+    and more. Google has many features to help you find exactly what you're looking
+    for.`,
+    imgSrc: '/static/images/web-banner.png',
+    href: 'https://www.google.com',
+  },
+  {
+    title: 'L`oreal Ad',
+    description: `What if you could look up any information in the world? Webpages, images, videos
+    and more. Google has many features to help you find exactly what you're looking
+    for.`,
+    imgSrc: '/static/images/web-banner.png',
+    href: 'https://www.google.com',
+  },
+  {
+    title: 'PMP Web Developement',
+    description: `What if you could look up any information in the world? Webpages, images, videos
+    and more. Google has many features to help you find exactly what you're looking
+    for.`,
+    imgSrc: '/static/images/web-banner.png',
+    href: 'https://www.google.com',
+  },
+  {
+    title: 'Tripwix PM',
+    description: `What if you could look up any information in the world? Webpages, images, videos
+    and more. Google has many features to help you find exactly what you're looking
+    for.`,
+    imgSrc: '/static/images/web-banner.png',
+    href: 'https://www.google.com',
+  },
+  {
+    title: 'Labuta Handmade',
+    description: `What if you could look up any information in the world? Webpages, images, videos
+    and more. Google has many features to help you find exactly what you're looking
+    for.`,
+    imgSrc: '/static/images/web-banner.png',
+    href: 'https://www.google.com',
+  },
+  {
+    title: 'Gateway.fm Advisor',
+    description: `What if you could look up any information in the world? Webpages, images, videos
+    and more. Google has many features to help you find exactly what you're looking
+    for.`,
+    imgSrc: '/static/images/web-banner.png',
+    href: 'https://www.google.com',
+  },
+  {
+    title: 'Parafina',
+    description: `What if you could look up any information in the world? Webpages, images, videos
+    and more. Google has many features to help you find exactly what you're looking
+    for.`,
+    imgSrc: '/static/images/web-banner.png',
+    href: 'https://www.google.com',
+  },
+  {
+    title: 'AKC NFT',
+    description: `What if you could look up any information in the world? Webpages, images, videos
+    and more. Google has many features to help you find exactly what you're looking
+    for.`,
+    imgSrc: '/static/images/web-banner.png',
+    href: 'https://www.google.com',
+  },
+  {
+    title: 'Dverse PM',
+    description: `What if you could look up any information in the world? Webpages, images, videos
+    and more. Google has many features to help you find exactly what you're looking
+    for.`,
+    imgSrc: '/static/images/web-banner.png',
+    href: 'https://www.google.com',
+  },
+  {
+    title: 'APPX UI/UX',
+    description: `What if you could look up any information in the world? Webpages, images, videos
+    and more. Google has many features to help you find exactly what you're looking
+    for.`,
+    imgSrc: '/static/images/web-banner.png',
+    href: 'https://www.google.com',
+  },
+  {
+    title: 'Ferro Bar',
     description: `What if you could look up any information in the world? Webpages, images, videos
     and more. Google has many features to help you find exactly what you're looking
     for.`,
