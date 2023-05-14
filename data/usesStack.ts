@@ -30,7 +30,7 @@ const usesStack = [
     href: 'https://www.ruby-lang.org/',
   },
   {
-    title: 'Ruby on Rails',
+    title: 'On Rails',
     description: `Ruby on Rails: because web development should be about more than just configuring webpack.`,
     href: 'https://rubyonrails.org/',
   },
